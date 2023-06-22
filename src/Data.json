@@ -1,0 +1,80 @@
+{
+    "english" : [
+    {
+    
+      "id": 1,
+      "title" : "breaking news"
+    },
+    {
+        "id": 2,
+        "title" : "politics"
+    }
+    ,
+    {
+        "id": 3,
+        "title" : "business"
+    }
+    ,
+    {
+        "id": 4,
+        "title" : "technology"
+    }
+    ,
+    {
+        "id": 5,
+        "title" : "health"
+    }
+    ,
+    {
+        "id": 6,
+        "title" : "sports"
+    }
+    ,
+    {
+        "id": 7,
+        "title" : "entertainment"
+    }
+
+
+
+],
+"arabic": [
+    {
+    
+      "id": 1,
+      "title" : "اخر الاخبار"
+    },
+    {
+        "id": 2,
+        "title" : "سياسة"
+    }
+    ,
+    {
+        "id": 3,
+        "title" : "اعمال"
+    }
+    ,
+    {
+        "id": 4,
+        "title" : "تكنولوجيا"
+    }
+    ,
+    {
+        "id": 5,
+        "title" : "صحة"
+    }
+    ,
+    {
+        "id": 6,
+        "title" : "رياضة"
+    }
+    ,
+    {
+        "id": 7,
+        "title" : "تسلية"
+    }
+
+
+
+]
+}

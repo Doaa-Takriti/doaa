@@ -1,38 +1,882 @@
-.App {
+.headernews .container >  div{
+
+  width:33.33%;
+}
+.watch{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.watch p {
+  display: inline-block;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  cursor: pointer;
+}
+img{
+  object-fit: cover;
+}
+body,html{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+.headernews {
+  background-color: white!important;
+height: 70px;
+}
+
+.headernews ul {
+  padding-left: 0;
+  list-style: none;
+  padding-bottom: 0;
+  margin-bottom: 0;
+ 
+}
+.headernews ul li {
+  margin-right: 25px;
+  display: inline-block;
+}
+.headernews h2  a{
+  color: hsl(0, 100%, 35%);
   text-align: center;
 }
+.headernews h2 {
+  text-align: center;
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+}
+.headernews .watch {
+  text-align: end;
+}
+.headernews .watch >span:first-child {
+  display: inline-block;
+  width:7px;
+  height: 7px;
+  border-radius: 50%;
+  background-color: hsl(0, 100%, 35%);
+}
+.headernews .watch span{
+font-weight: bold;
+text-transform: uppercase;
+
+}
+.headernews .watch a{
+  padding: 5px 20px;
+  border: 1px solid hsl(0, 100%, 35%);
+  font-size: 12px;
+  color:hsl(0, 100%, 35%);
+  text-decoration: none;
+margin-left: 25px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.HeaderCategory .container{
+  border-top: 1px solid hsl(0, 100%, 35%);
+  border-bottom: 1px solid hsl(0, 100%, 35%);
 }
+.HeaderCategory ul{
+  padding-left: 0;
+  list-style: none;
+  text-align: center;
+  padding-top: 15px;
+  padding-bottom: 15px;
+margin-bottom: 0;
+  width:80%;
+  margin: auto;
+}
+.HeaderCategory ul li {
+  display: inline-block;
+  text-transform: uppercase;
+  font-weight: 500;
+  width:calc(100% / 7);
+  cursor: pointer;
+  transition: all ease-in-out .5s;
+  
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+
+}
+.HeaderCategory ul li:hover{
+  color:hsl(0, 100%, 35%)
+}
+.Technology img {
+  width:100%;
+  height: 100%;
+  object-fit: cover;
+}
+.tech-desc{
+  background-color: hsl(0, 100%, 35%);
+  padding: 15px;
+  height: 100%;
+  position: relative;
+}
+.tech-desc > span:first-child {
+  padding: 5px 10px;
+  background-color: hsl(0, 100%, 35%);
+  border: 1px solid white;
+  color:white;
+  font-size: 13px;
+}
+.tech-desc h5 {
+margin-top: 30px;
+color: white;
+margin-bottom: 30px;
+}
+.tech-desc  p{
   color: white;
 }
+.tech-desc > div{
+width:90%;
 
-.App-link {
-  color: #61dafb;
+position: absolute;
+bottom: 10px;
+color: #f7f7f7;
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+.tech-desc > div span{
+
+}
+.date{
+  display: flex;
+  justify-content: space-between;
+}
+.date span{
+  color: lightgray;
+}
+.date p {
+  color: #101010;
+  font-weight: bold;
+}
+.TechnologySub{
+ 
+}
+.TechnologySub .row {
+  border-bottom: 2px solid lightgray;
+  padding-top: 15px;
+  padding-bottom: 15px;
+
+}
+.TechnologySub img{
+width: 100%;
+    height: 150px;
+    object-fit: cover
+}
+.span-img{
+  position: relative;
+}
+.span-img span {
+  position: absolute;
+  top:10px;
+  left: 15px;
+  background-color: hsl(0, 100%, 35%);
+  color: white;
+  padding: 7px 15px;
+  font-size: 12px;
+  text-transform: capitalize;
+}
+.loadmore a {
+  width:100%;
+  border: 1px solid hsl(0, 100%, 35%);
+  color: hsl(0, 100%, 35%);
+  padding: 10px;
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  transition: all ease-in-out .5s;
+}
+.loadmore a:hover{
+  background-color: hsl(0, 100%, 35%);
+  color: white;
+  border-color: hsl(0, 100%, 35%);
+}
+.loadmore{
+  width: 100%;
+  margin-top: 40px;
+}
+.HeaderNewsdark .loadmore a{
+  color: white;
+  border-color: white;
+}
+.TechnologySub{
+  padding-bottom: 80px;
+}
+.heading{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 1px solid hsl(0, 100%, 35%);
+  border-bottom: 1px solid hsl(0, 100%, 35%);
+  text-transform: uppercase;
+}
+.heading h1 {
+  color:hsl(0, 100%, 35%);
+}
+.heading i {
+  margin-left: 15px;
+  color: hsl(0, 100%, 35%);
+}
+.BreakingNews .BreakingNewsSub:first-child{
+border-bottom: 1px solid lightgray;
+}
+.BreakingNews  .col-3:first-child {
+  border-right: 1px solid lightgray;
+
+}
+.BreakingNews  .col-3:last-child {
+  border-left: 1px solid lightgray;
+
+}
+.BreakingNewsSub {
+  margin-bottom: 15px;
+}
+.BreakingNewsSub img {
+width:100%;
+height: 200px;
+margin-bottom: 15px;
+
+}
+.BreakingNewsSub p {
+  font-weight: bold;
+}
+.BreakingNewsSubCenter img{
+  width:100%;
+  height: 350px;
+
+}
+.BreakingNewsSubCenter > p:first-child {
+  font-weight: bold;
+}
+.ImgSport img{
+  width:100%;
+  height: 250px;
+  object-fit: cover;
+}
+.ImgSport{
+  padding-bottom: 15px;
+  border-bottom:  1px solid lightgray;
+}
+.DescSport{
+  padding-bottom: 15px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  border-bottom:  1px solid lightgray;
+
+}
+.DescSport >div:last-child {
+  color:gray
+}
+.DescSport{
+  border-right:  1px solid lightgray;
+
+
+}
+.Imgdesc{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  padding-bottom: 15px;
+  border-bottom:  1px solid lightgray;
+
+}
+.Imgdesc img {
+  width:100%;
+  height: 100px;
+}
+.Imgdesc p{
+  font-weight: bold;
+}
+.Imgdesc > div:last-child {
+  color:gray
+}
+.footer{
+  background-color: #fafafa;
+
+}
+.footer .col-3,
+.footer .col-2
+{
+  background-color: #fafafa;
+}
+.footer h1{
+  text-transform: uppercase;
+  color:hsl(0, 100%, 35%);
+  font-size: 25px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.footer ul {
+  padding-left: 0;
+  list-style: none;
+  padding-top: 20px;
+  padding-bottom: 5px;
+}
+.footer ul  li {
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+  cursor: pointer;
+  transition: all ease-in-out  .5s;
+
+}
+.footer ul  li:hover{
+  color:hsl(0, 100%, 35%);
+}
+.footer ul + p{
+  color:gray;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-top: 15px;
+}
+.subscribe {
+  background-color: hsl(0, 100%, 35%);
+  height: 100%;
+  padding: 15px;
+
+}
+.subscribe h3{
+  color: #fafafa;
+  margin-bottom: 20px;
+}
+.subscribe > div {
+padding: 20px;
+height: 100%;
+
+}
+.subscribe input {
+  width: 100%;
+    padding: 15px;
+    background-color: hsl(0, 100%, 35%);
+    border: none;
+    outline: none;
+    box-shadow: none;
+    border:1px solid #fafafa;
+    margin-bottom: 15px;
+}
+.subscribe p{
+  color: #f7f7f7;
+  font-size: 13px;
+}
+.subscribe p span{
+  font-weight: bold;
+}
+.subscribe input::placeholder{
+  color:#fafafa
+}
+.subscribe > div >div  {
+  position: relative;
+}
+.subscribe > div i{
+  position: absolute;
+  top:5px;
+  right:5px;
+  background-color: white;
+  padding: 15px;
+  color: hsl(0, 100%, 35%);
+}
+.headingDetailarticle{
+  padding-top: 40px;
+  padding-bottom: 50px;
+
+
+}
+.headingDetailarticle h3{
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.headingDetailarticle .row .col-7 > span:first-child {
+  padding: 10px;
+  border: 1px solid hsl(0, 100%, 35%);
+  color :hsl(0, 100%, 35%);
+  font-size: 12px;
+  text-transform: capitalize;
+}
+.headingDetailarticle .row .col-7 > span:nth-child(2){
+  font-weight: bold;
+  text-transform: capitalize;
+} 
+.headingDetailarticle .row .col-7 > span:nth-child(3),
+.headingDetailarticle .row .col-7 > span:nth-child(4){
+  color: gray;
+  text-transform: capitalize;
+
+}
+.headingDetailarticle .row .col-7 > span{
+  margin-right: 25px;
+}
+.headingDetailarticle .container > div{
+  width: 80%;
+  margin: auto;
+}
+.headingDetailarticle .col-5{
+  text-align: end;
+}
+.headingDetailarticle .col-5 i{
+  color: gray;
+  margin-right: 5px;
+}
+.headingDetailarticle .container:first-child {
+  padding-bottom: 30px;
+}
+.headingDetailarticle .container p{
+  width:80%;
+  margin: auto;
+  padding-top: 20px;
+  margin-bottom: 20px;
+  border-top: 2px solid lightgray;
+  font-weight: bold;
+
+  margin-top: 20px;
+}
+.Detailarticleimg{
+  width: 100%;
+  height: 400px;
+}
+.Recommedcenter > span:first-child{
+  font-size: 12px;
+  color: gray;
+  margin-top: 10px;
+padding-bottom: 40px;
+  font-weight: bold;
+}
+.Recommedcenter > p:first-child{
+  margin-top: 20px;
+}
+.mt20{
+  margin-top: 20px;
+
+}
+.Recommedcenter  img{
+  width: 100%;
+  height: 400px;
+}
+.Recommedcenter  p {
+  font-weight: bold;
+  font-size: 12px;
+}
+.Recommedcenter{
+  padding-bottom: 30px;
+}
+.follow img{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+.follow .col-3 >div:first-child{
+  font-weight: bold;
+  font-size: 15px;
+}
+.follow i{
+  color: rgb(66, 113, 158);
+  margin-right: 5px;
+}
+.Recommendsub{
+  padding-top: 50px;
+}
+.Recommendsub h5{
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.Recommendsub > div{
+  justify-content: space-between;
+}
+.Recommendsub > div span{
+  text-transform: uppercase;
+
+  font-weight: 500;
+}
+.Recommendsub > div span i{
+  color:hsl(0, 100%, 35%)
+}
+.Recommendsubone{
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.Recommendsubone img{
+  width:100%;
+  height: 70px;
+  object-fit: cover;
+}
+.Recommendsubone  .col-7{
+  padding-left: 0;
+}
+.Recommendsubone  .col-7 > div{
+  display: flex;
+  font-size: 12px;
+  text-transform: uppercase;
+  justify-content: space-between;
+}
+.Recommendsubone  .col-7 > div span:first-child{
+  color:hsl(0, 100%, 35%)
+}
+.Recommendsubone  .col-7 > div span:last-child {
+  color:gray
+}
+.Recommendsubone  .col-7 p{
+  font-size: 13px;
+  font-weight: bold;
+}
+.RecommedIcon ul {
+  list-style: none;
+  padding-left: 0;
+  text-align: end;
+  padding-top: 45px;
+  display: flex;
+    flex-direction: column;
+    align-items: end;
+
+}
+.RecommedIcon ul li {
+  border: 1px solid hsl(0, 100%, 35%);
+  margin-bottom: 15px;
+  padding: 10px;
+  font-size: 15px
+  ;
+  width: 35px;
+  height: 35px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: hsl(0, 100%, 35%);
+  cursor: pointer;
+}
+.RecommedIcon ul li  i{
+  text-align: center;
+}
+.top-scroll{
+  border: 1px solid hsl(0, 100%, 35%);
+ width: 40px;
+ height: 40px;
+ text-align: center;
+ display: inline-flex;
+ cursor: pointer;
+ margin-top: 30px;
+ justify-content: center;
+ align-items: center;
+}
+.top-scroll i{
+  font-size: 25px;
+  color: hsl(0, 100%, 35%);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+.swiper {
+  width: 100%;
+  height: 100%;
 }
+
+.swiper-slide {
+  font-size: 18px;
+
+
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.swiper-slide {
+  width: 27%!important;
+  
+}
+.swiper-scrollbar-drag{
+  width:25%!important;
+  background-color: hsl(0, 100%, 35%)!important;
+  
+
+}
+
+.swiperrrr{
+  position: relative;
+}
+.tech{
+  color:hsl(0, 100%, 35%);
+  padding: 7px;
+  background-color: white;
+  border: 1px solid hsl(0, 100%, 35%);
+  font-size: 12px;
+  text-transform: capitalize;
+  margin-bottom: 15px;
+}
+.swiper-slide > div{
+  border-right: 1px solid lightgray;
+}
+.swiper-slide div {
+
+
+  margin-left: 40px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  padding-right: 40px;
+
+
+}
+.swiper-horizontal{
+  overflow: visible!important;
+}
+.swiper-slide > div p{
+  font-weight: bold;
+  font-size: 15px;
+  margin-top: 14px;
+  margin-bottom: 10px;
+}
+.swiper-slide > div img{
+  height: 200px;
+  width: 100%;
+}
+.swiper-horizontal>.swiper-scrollbar, .swiper-scrollbar.swiper-scrollbar-horizontal {
+  position: absolute;
+  left: var(--swiper-scrollbar-sides-offset,3%)!important;
+  bottom: var(--swiper-scrollbar-bottom,4px);
+  top: var(--swiper-scrollbar-top,auto);
+  z-index: 50;
+  height: var(--swiper-scrollbar-size,4px);
+  width: calc(100% - 6* var(--swiper-scrollbar-sides-offset,1%))!important;
+}
+.swiper-button-next, .swiper-rtl .swiper-button-prev ,
+.swiper-button-prev 
+  {
+  top:-60px!important;
+}
+.swiper-button-next{
+  right: var(--swiper-navigation-sides-offset,50px)!important
+}
+.swiper-button-next:after,
+.swiper-button-prev:after{
+  font-size: 10px!important;
+  color:white;
+  background-color: hsl(0, 100%, 35%);
+  padding: 10px;
+
+}
+.most {
+  color:hsl(0, 100%, 35%);
+  text-transform: uppercase;
+  padding: 40px;
+  
+}
+.swiper-button-prev, .swiper-rtl .swiper-button-next {
+  left: var(--swiper-navigation-sides-offset,91%)!important;
+  right: auto;
+}
+.HeaderNewsdark{
+  background-color: #101010!important;
+  color: white;
+}
+.newdark{
+  color: white!important;
+}
+.buttondark{
+  border-color: white!important;
+  color: white!important;
+}
+.swiperrrr{
+  padding-bottom: 20px;
+  background-color: #f7f7f7;
+
+}
+
+.swiperrrr .most{
+  background-color: white;
+}
+.swiper-horizontal>.swiper-scrollbar, .swiper-scrollbar.swiper-scrollbar-horizontal 
+{
+  background-color: lightgray!important;
+}
+.HeaderNewsdark .swiper-button-next:after,
+.HeaderNewsdark  .swiper-button-prev:after{
+  background-color: #101010;
+}
+.HeaderNewsdark.footer .col-2,
+.HeaderNewsdark.footer .col-3  {
+  background-color: #101010!important;
+  color: white;
+}
+.HeaderNewsdark .top-scroll{
+  border-color: white;
+  color: white;
+}
+.HeaderNewsdark .top-scroll i{
+  color: white;
+
+}
+.Recommendsub{
+  padding-right: 70px;
+}
+.headingDetailarticle .col-7 span{
+  text-transform: capitalize;
+
+}
+.HeaderNewsdark .form-switch .form-check-input:checked {
+  background-color: hsl(0, 100%, 35%);
+  box-shadow: none;
+  border: none;
+}
+.form-switch .form-check-input{
+  box-shadow: none!important;
+  border: none;
+  background-color: #f7f7f7;
+}
+a{
+  text-decoration: none!important;
+}
+.container{
+  padding: 0!important;
+}
+.Technology {
+  padding-top: 20px
+ }
+ body {
+  position: relative;
+ }
+ .ScrollTop {
+  position: fixed;
+  bottom:135px;
+  left: 100px;
+  background-color: #f7f7f7;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  color: hsl(0, 100%, 35%);
+  border: 1px solid hsl(0, 100%, 35%);
+  display: inline-block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 9999999999999999999999;
+
+ }
+ .ScrollTop i{
+  font-size: 20px;
+  z-index: 9999999999999999999999;
+ }
+ .ScrollTop{
+  transition: all ease-in-out .5s;
+ 
+  }
+ .loading{
+  margin: auto;
+  text-align: center;
+  height: 200px;
+  padding: 50px;
+ }
+ .rtl p{
+  text-align: right!important;
+  direction: rtl;
+ }
+ .Technology .col-md-8{
+  padding-right: 0;
+ }
+ .Technology .col-md-4{
+  padding-left: 0;
+ }
+ img{
+  transition: all ease-in-out.5s;
+
+ }
+ img:hover{
+  filter: brightness(0.5); }
+  .fa-bars{
+    display: none;
+  }
+  @media(max-width:1000px){
+    .fa-bars{
+      display: block;
+    }
+    .footer .row{
+      padding-left: 0!important;
+    }
+    .footer{
+      text-align: center;
+    }
+    .container{
+      padding: 15px!important;
+    }
+    .Technology .col-md-8{
+      padding: 0!important;
+    }
+    .Technology .col-md-4 {
+      padding: 0!important;
+    }
+    .heading h1{
+      font-size: 22px;
+      margin-bottom: 0;
+    }
+    .RecommedIcon ul {
+      display: flex;
+      flex-direction: row;
+
+    }
+    .RecommedIcon ul li{
+      margin-right: 15px;
+    }
+    .ScrollTop{
+      bottom:20px;
+      left: 20px;
+    }
+    .Recommendsub {
+      padding-right: 0;
+    }
+    .most {
+      padding-left: 15px;
+    }
+    .swiper-slide{
+      width: 100%!important;
+
+    }
+    .headernews .container > div{
+  width:100%
+}
+.navbar-expand{
+  height: auto;
+}
+.navbar-expand .container{
+  flex-direction: column;
+}
+.icons{
+  text-align: center;
+}
+.offcanvas-body ul{
+  list-style: none;
+  padding-left: 0;
+
+}
+.offcanvas-header{
+  text-align: end;
+    display: block!important
+}
+.offcanvas-body ul li{
+  margin-bottom: 15px;
+  cursor: pointer;
+  transition: all ease-in-out .5s;
+  text-transform: uppercase;
+  border-bottom:  1px solid hsl(0, 100%, 35%);
+  padding-bottom: 10px;
+
+}
+.offcanvas-body ul li:hover{
+  color:hsl(0, 100%, 35%)
+}
+.offcanvas.show:not(.hiding), .offcanvas.showing,
+.offcanvas.show.hiding{
+  width:60%
+}
+.headernews ul li {
+  margin-right: 10px;
+}
+.HeaderCategory{
+  display: none;
+}
+.DescSport{
+  border-right: none;
+}
+  }

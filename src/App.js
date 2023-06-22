@@ -1,24 +1,37 @@
-import logo from './logo.svg';
 import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import { useContext } from 'react';
+
+import HeaderNews from "./pages/HeaderNews";
+import HeaderCategory from "./pages/HeaderCategory"
+import { Routes, Route } from 'react-router-dom'
+import Home from "./pages/Home"
+import Footer from "./components/Footer"
+import Detailarticle from "./pages/Detailarticle"
+import ScrollTop from "./components/ScrollTop"
+import { Context } from './Context';
+
+
+
 
 function App() {
+  const { language } = useContext(Context);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+  <div className={language === "en" ? 'app' : 'app rtl'}>
+<HeaderNews />
+<HeaderCategory />
+<ScrollTop />
+<Routes>
+          <Route path='/' element={<Home />} />
+          <Route path='/Detailarticle' element={<Detailarticle />} />
+
+         
+          </Routes>
+
+          <Footer/>
+
+  </div>
   );
 }
 
